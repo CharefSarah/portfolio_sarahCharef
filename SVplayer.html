@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio Sarah charef</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/projet.css">
+</head>
+
+<body class="is-smooth-scroll-compatible is-loading">
+
+    <div data-scroll-container class="container" id="pageContainer" data-scroll-id="pageContainer">
+
+
+        <section class="section_first_sv">
+            <h1 data-scroll data-scroll-speed="3" data-scroll-position="top">SV Player</h1>
+            <p data-scroll data-scroll-speed="2.3" data-scroll-position="top" class="subtitle">Design/Branding</p>
+
+
+            <div data-scroll class="little_title">
+                <span data-scroll data-scroll-speed="1" data-scroll-position="top" data-scroll-delay="0.05">2</span>
+                <span data-scroll data-scroll-speed="1.3" data-scroll-position="top" data-scroll-delay="0.05">0</span>
+                <span data-scroll data-scroll-speed="1.2" data-scroll-position="top" data-scroll-delay="0.05">2</span>
+                <span data-scroll data-scroll-speed="1.1" data-scroll-position="top" data-scroll-delay="0.05">1</span>
+
+            </div>
+        </section>
+        <section class="section_2">
+            <div class="section-0" data-scroll data-scroll-speed="2">
+                <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2">
+                    Une application faites pour vous
+                </p>
+                <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="2">
+                    Votre musique vous accompagne
+                </p>
+        </section>
+        <section data-scroll-container class="section_projet">
+            <div class="header_projet ">
+                <h2 data-scroll data-scroll-speed="3" data-scroll-position="center" class="title_section_projet">
+                    Un lecteur de musique<br> qui vous ressemble</h2>
+                <div class="hd_row1 ">
+                    <div class="hd_r1_col_left">
+                        <div class="hd_r1_col_left-text">
+                            <h3 class="color1">A propos</h3>
+                            <p>Retrouvez, tous vos albums préférés dans votre application SV player.
+                                Vous pouvez créer vos playlists et écouter vos albums hors ligne.
+
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="hd_r1_col_right">
+                        <a href="#"> <img class="ukiyo" src="assets/images/header/sv.jpg"></a>
+                    </div>
+                </div>
+        </section>
+        <section data-scroll-container class="section_projet color2">
+            <div class="header_projet_2">
+                <div class="hd_row2 ">
+                    <div class="hd_r1_col_left">
+                        <div class="hd_r1_col_left-text">
+                            <h3>La Charte <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="20"
+                                    height="20">
+                                    <circle cx="100" cy="100" r="80" fill="#2C2C2C" />
+                                </svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="20"
+                                    height="20">
+                                    <circle cx="100" cy="100" r="80" fill="#D9FAD0" />
+                                </svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="20"
+                                    height="20">
+                                    <circle cx="100" cy="100" r="80" fill="#9AB8A1" />
+                                </svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="20"
+                                    height="20">
+                                    <circle cx="100" cy="100" r="80" fill="#80FF00" />
+                                </svg></h3>
+                            <p>Le vert est synonyme de croissance, de renouveau, de jeunesse, de transformation. Cette
+                                couleur est particulièrement recommandée pour la recherche et la créativité.
+
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="hd_r1_col_right">
+                        <a href="#"> <img class="ukiyo" src="assets/images/sv/sv-pub.png"></a>
+                    </div>
+                </div>
+        </section>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/CSSRulePlugin.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ukiyojs@2.0.2/dist/ukiyo.min.js"></script>
+
+</body>
+
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // UKIYO ----------------------------------------------------------------
+    const els = document.querySelectorAll(".ukiyo");
+    els.forEach((el) => {
+        const parallax = new Ukiyo(el);
+    });
+
+    // Locomotive Scroll -----------------------------------------------------
+    const locoScroll = new LocomotiveScroll({
+        el: document.querySelector('#pageContainer'),
+        smooth: true,
+        getDirection: true,
+        scrollFromAnywhere: true
+
+    });
+
+    const azerty = document.querySelector(".container");
+    azerty.setAttribute("data-scroll-container", "");
+
+    //ScrollTrigger  ---------------------------------------------------------
+    locoScroll.on("scroll", ScrollTrigger.update);
+
+    ScrollTrigger.scrollerProxy("#pageContainer", {
+        scrollTop(value) {
+            return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+        },
+        getBoundingClientRect() {
+            return {
+                top: 0,
+                left: 0,
+                width: window.innerWidth,
+                height: window.innerHeight,
+            };
+        },
+        fixedMarkers: true,
+        pinType: document.querySelector('#pageContainer').style.transform ? "transform" : "fixed"
+    });
+
+
+    gsap.to('body', {
+        scrollTrigger: {
+            trigger: '.color1',
+            scroller: '.container',
+            scrub: true,
+            start: "20% 50%",
+            end: "top 50%",
+        },
+        backgroundColor: '#F5FFF3'
+    });
+    gsap.to('body', {
+        scrollTrigger: {
+            trigger: '.color2',
+            scroller: '.container',
+            scrub: true,
+            start: "top top",
+            end: "top 50%",
+        },
+        backgroundColor: '#F9FCFF'
+    });
+
+
+
+    ScrollTrigger.addEventListener('refresh', () => locoScroll.update());
+    ScrollTrigger.refresh();
+</script>
+
+</html>
