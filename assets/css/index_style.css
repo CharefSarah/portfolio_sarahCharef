@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Manrope', sans-serif;
+    overflow-x: hidden;
+
+}
+
+h1 {
+    font-size: 13vw;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 3.5vw;
+}
+
+.subtitle {
+    font-size: 7vw;
+    line-height: 1;
+}
+
+.center {
+    text-align: center;
+}
+
+.little_title span {
+    display: inline-block;
+}
+
+.section_first {
+ 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 4vw;
+    margin: 0;
+}
+
+.section_2 {
+    
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.section_2 p {
+
+    font-size: 3vw;
+
+}
+
+.section_projet{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding-top: 8.6vh;
+ 
+  
+}
+.header_projet{
+    display: flex;
+    flex-direction: column;
+
+}
+.hd_row1{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100%;
+}
+.title_section_projet{
+    padding-left: 5%;
+    font-style: extra-light;
+    font-weight: 200;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+.hd_r1_col_left{
+    font-size: 1.8vw;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: left;
+    align-items:center;
+    width: 50%;
+}
+.hd_r1_col_right{
+    padding: 5%;
+    justify-content:center;
+    align-items:center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.hd_r1_col_right img{
+    height: 600px;
+    width: 450px;
+    
+}
+
+.hd_r1_col_left-text h3{
+margin-top:2%;
+margin-bottom:2%;
+}
+.hd_r1_col_left-text h4{
+    margin-top:2%;
+    font-size: 1.5vw;
+    color: rgb(145, 145, 145);
+    font-weight: extra-light;
+   
+    }
+
+    .section_projet_2{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding-top: 8.6vh;
+     
+      
+    }
+    
+    .hd_row2{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100vw;
+        height: 100%;
+    }
