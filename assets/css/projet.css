@@ -252,49 +252,42 @@ html.has-scroll-dragging {
     height: 100%;
 }
 
-.gallery_projet {
-    padding-inline: 5%;
+.gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+
+}
+
+.gallery_row{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    border: blue 3px solid;
+    width: 80vw;
+    padding: 5%;
+    
 }
-
-.gl_col_left {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    border: yellow 3px solid;
-
-
-}
-
-.gl_col_right {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    border: orange 3px solid;
-
-}
-
-.img_left_1 {
-    width: 90%;
-    padding-inline: 5%;
-    margin: auto;
-    margin-bottom: 10%;
-}
-
-.img_right_1 {
+.gallery_row img{
   
-   
-    margin-bottom: 10%;
-    max-height: 600px;
-    max-width: 600px;
+    width: 90%;
     margin: auto;
+    
 }
 
 
+.col_gl_right{
+    padding-top: 10%;
+}
+
+.gallery_row_2{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80vw;
+    padding: 5%;
+    
+}
+.gallery_row_2 img{
+  
+    width: 90%;
+    margin: auto;
+    
+}
