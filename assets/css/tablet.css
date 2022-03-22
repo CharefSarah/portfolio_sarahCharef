@@ -1,6 +1,6 @@
 @media screen and (max-width: 800px) {
     .section_first_style {
-        height: 95vh;
+        height: 90vh;
     }
 
     .section_first_sv {
@@ -9,6 +9,18 @@
 
     .section_first_wokeasy {
         background-position: right center;
+    }
+
+    .section_first_nasa {
+        background-position: left center;
+    }
+
+    .section_first_training_center {
+        background-position: 15% center;
+    }
+
+    .section_first_zencoffee {
+        background-position: center center;
     }
 
     .hd_row1 {
@@ -34,7 +46,7 @@
     }
 
     .hd_r1_col_left {
-        font-size: 14px;
+        font-size: 16px;
         width: 350px;
     }
 
@@ -75,6 +87,10 @@
     .hd_r1_col_right a div {
         width: 90vw !important;
         height: auto;
+    }
+
+    .hd_r1_col_right>div {
+        width: 90vw !important;
     }
 
     .ukiyo {
