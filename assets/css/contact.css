@@ -74,9 +74,13 @@ form {
     width: 95%;
 }
 
-input:focus, textarea:focus, input:hover, textarea:hover {
-  outline: none;
+input:focus,
+textarea:focus,
+input:hover,
+textarea:hover {
+    outline: none;
 }
+
 input {
     border: none;
     height: 25px;
@@ -137,4 +141,31 @@ button[type="submit"]:hover {
         padding-right: 5%;
         width: 90%;
     }
+}
+
+
+/* ----------------------------------- nav ---------------------------------- */
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-top: 1.5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    z-index: 99999;
+    color: #ffff;
+    mix-blend-mode: difference;
+}
+
+.nav .titlenav a,
+.nav a {
+    text-decoration: none;
+    color: #fff;
 }

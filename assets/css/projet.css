@@ -156,7 +156,7 @@ html.has-scroll-dragging {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 95vh;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -448,4 +448,31 @@ html.has-scroll-dragging {
 .gllr_row_3 img {
     height: 350px;
     margin: 10px;
+}
+
+
+/* ----------------------------------- nav ---------------------------------- */
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-top: 1.5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    z-index: 99999;
+    color: #ffff;
+    mix-blend-mode: difference;
+}
+
+.nav .titlenav a,
+.nav a {
+    text-decoration: none;
+    color: #fff;
 }
