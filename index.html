@@ -12,12 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/index_style.css">
+    <link rel="stylesheet" href="assets/css/tablet.css">
 </head>
 
 <body class="is-smooth-scroll-compatible is-loading">
     <div class="nav">
-        <h1 class="titlenav" ><a href="index.html">Sarah charef</a></h1>
-        <a href="#"  class="contact">Contact</a>
+        <h1 class="titlenav"><a href="index.html">SRHC</a></h1>
+        <a href="#" class="contact">Contact</a>
     </div>
 
 
@@ -123,6 +124,78 @@
                 <img src="assets/images/wokeasy/wokeasygrille32.png">
             </div>
         </section>
+        
+        <section class="social-media colorend">
+            <div class="container_scrollable">
+                <div class="media-scroller snaps-inline">
+                    <div class="media-element" id="items">
+                        <div class="card_info">
+                            <a href="https://www.instagram.com/srhc_design/" target="_blank"><img
+                                    src="assets/images/instagram/instagram.png" alt="Image d'instagram"></a>
+                            <div class="card_info_link">
+                                <div>
+                                    <a name="Lien voir plus de method" href="https://www.instagram.com/srhc_design/"
+                                        target="_blank" class="card_btn">Instagram<i class="bi
+                    bi-arrow-up-right"></i></a>
+                                </div>
+                                <div class="card_info_tag"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-element" id="items">
+                        <div class="card_info">
+                            <a name="Lien du site " href="https://dribbble.com/SarahVallanzasca" target="_blank"><img
+                                    src="assets/images/instagram/dribble.png" alt="Image dribbble"></a>
+                            <div class="card_info_link">
+                                <div>
+                                    <a name="Lien voir plus du site codingame"
+                                        href="https://dribbble.com/SarahVallanzasca" target="_blank"
+                                        class="card_btn">Dribbble<i class="bi
+                    bi-arrow-up-right"></i></a>
+                                </div>
+                                <div class="card_info_tag"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-element" id="items">
+                        <div class="card_info">
+                            <a name="Lien du site codingame" href="https://www.linkedin.com/in/sarah-charef-56b1091b1/"
+                                target="_blank"><img src="assets/images/instagram/tbs.png"
+                                    alt="Image d'un post linkedin"></a>
+                           
+                            <div class="card_info_link">
+                                <div>
+                                    <a name="Lien voir plus du site "
+                                        href="https://www.linkedin.com/in/sarah-charef-56b1091b1/" target="_blank"
+                                        class="card_btn">Linkedin<i class="bi
+                    bi-arrow-up-right"></i></a>
+                                </div>
+                                <div class="card_info_tag"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-element" id="items">
+                        <div class="card_info">
+                            <a name="Lien du site codingame" href="https://www.behance.net/sarahvlz"
+                                target="_blank"><img src="assets/images/instagram/behance.png"
+                                    alt="Image de Behance"></a>
+                            <div class="card_info_link">
+                                <div>
+                                    <a name="Lien voir plus du site behance" href="https://www.behance.net/sarahvlz"
+                                        target="_blank" class="card_btn">Behance<i class="bi
+                    bi-arrow-up-right"></i></a>
+                                </div>
+                                <div class="card_info_tag"> </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
     </div>
 
 
@@ -249,13 +322,75 @@
         color: '#fff',
     });
 
+    gsap.to('body', {
+        scrollTrigger: {
+            trigger: '.colorend',
+            scroller: '.container',
+            scrub: true,
+            start: "20% 50%",
+            end: "top 50%",
+        },
+        backgroundColor: '#000',
 
+    });
 
 
 
 
     ScrollTrigger.addEventListener('refresh', () => locoScroll.update());
     ScrollTrigger.refresh();
+</script>
+<script>
+    /* -------------------------------------------------------------------------- */
+    /*                                SCRIPT SLIDER                               */
+    /* -------------------------------------------------------------------------- */
+    const slider = document.querySelector('.media-scroller'); // Classe du Sliders
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    document.querySelectorAll('.media-scroller').forEach(item => {
+        item.addEventListener('mousedown', (e) => {
+            isDown = true;
+            item.style.cursor = "grabbing";
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        });
+    });
+
+    document.querySelectorAll('.media-scroller').forEach(item => {
+        item.addEventListener('mouseleave', (e) => {
+            item.style.cursor = "grab";
+            isDown = false;
+        });
+    });
+
+    document.querySelectorAll('.media-scroller').forEach(item => {
+        item.addEventListener('mouseup', (e) => {
+            isDown = false;
+            item.style.cursor = "grab";
+        });
+    });
+
+    document.querySelectorAll('.media-scroller').forEach(item => {
+        item.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            console.log(x);
+            const walk = (x - startX) * 3; //scroll-fast
+            item.scrollLeft = scrollLeft - walk;
+
+        });
+    });
+
+    const mouseMoveHandler = function (e) {
+        const dx = e.clientX - pos.x;
+        const dy = e.clientY - pos.y;
+
+        ele.scrollTop = pos.top - dy;
+        ele.scrollLeft = pos.left - dx;
+    };
 </script>
 
 </html>
