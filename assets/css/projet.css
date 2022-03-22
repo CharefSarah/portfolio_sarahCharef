@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 html,
@@ -181,6 +182,7 @@ html.has-scroll-dragging {
     margin: 0;
     color: #fff;
 }
+
 .section_first_zencoffee {
     background-image: url("../images/zencoffee/zencoffee-header.png");
     background-position: center center;
@@ -196,6 +198,7 @@ html.has-scroll-dragging {
     margin: 0;
     color: #fff;
 }
+
 .section_first_starrynight {
     background-image: url("../images/starrynight/starrynightheader.png");
     background-position: center center;
@@ -211,6 +214,7 @@ html.has-scroll-dragging {
     margin: 0;
     color: #fff;
 }
+
 .section_first_shieldbearers {
     background-image: url("../images/shieldbearers/Login.png");
     background-position: center center;
@@ -226,6 +230,7 @@ html.has-scroll-dragging {
     margin: 0;
     color: #fff;
 }
+
 .section_first_training_center {
     background-image: url("../images/trainingCenter/banner.jpg");
     background-position: center center;
@@ -241,7 +246,7 @@ html.has-scroll-dragging {
     margin: 0;
     color: #fff;
 
-  
+
 }
 
 
@@ -333,17 +338,18 @@ html.has-scroll-dragging {
     font-weight: extra-light;
 
 }
+
 .hd_r1_col_left-text p {
-  margin-bottom: 2%;
+    margin-bottom: 2%;
 }
 
 .hd_r1_col_left-text a {
     color: #2c2c2c;
-  }
-  
-  .hd_r1_col_left-text a:hover {
+}
+
+.hd_r1_col_left-text a:hover {
     color: #9c9c9c;
-  }
+}
 
 
 .section_projet_2 {
@@ -410,14 +416,14 @@ html.has-scroll-dragging {
 
 }
 
-.color2{
+.color2 {
     margin-bottom: 10%;
 }
 
 
 
 
-.gallery{
+.gallery {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -425,16 +431,21 @@ html.has-scroll-dragging {
     align-items: center;
 }
 
-.gllr_row_1, .gllr_row_2, .gllr_row_3{
+.gllr_row_1,
+.gllr_row_2,
+.gllr_row_3 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100vw;
-    padding-left:5%;
-    padding-right:5%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
-.gllr_row_1 img , .gllr_row_2 img , .gllr_row_3 img{
+
+.gllr_row_1 img,
+.gllr_row_2 img,
+.gllr_row_3 img {
     height: 350px;
     margin: 10px;
 }

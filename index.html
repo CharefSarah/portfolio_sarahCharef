@@ -15,12 +15,15 @@
 </head>
 
 <body class="is-smooth-scroll-compatible is-loading">
+    <div class="nav">
+        <h1 class="titlenav" ><a href="index.html">Sarah charef</a></h1>
+        <a href="#"  class="contact">Contact</a>
+    </div>
 
-    <div data-scroll-container class="container">
 
-
+    <div data-scroll-container class="container" id="pageContainer" data-scroll-id="pageContainer">
         <section class="section_first color0">
-            <h1 data-scroll data-scroll-speed="3" data-scroll-position="top">Webdesign</h1>
+            <h2 class="webdesign" data-scroll data-scroll-speed="3" data-scroll-position="top">Webdesign</h2>
             <p data-scroll data-scroll-speed="2.3" data-scroll-position="top" class="subtitle">Sarah Charef</p>
 
 
@@ -36,7 +39,7 @@
                 <span data-scroll data-scroll-speed="1.1" data-scroll-position="top" data-scroll-delay="0.05">o</span>
             </div>
         </section>
-        <section class="section_2">
+        <section class="section_2 color1">
             <div class="section-0" data-scroll data-scroll-speed="2">
                 <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2">
                     Tous les problèmes ont des solutions
@@ -50,7 +53,7 @@
             <div class="header_projet">
                 <h2 data-scroll data-scroll-speed="3" data-scroll-position="center" class="title_section_projet">
                     Derniers projets</h2>
-                <div class="hd_row1 ">
+                <div class="hd_row1 color2">
                     <div class="hd_r1_col_left">
                         <div class="hd_r1_col_left-text">
                             <h3>Wokeasy</h3>
@@ -69,7 +72,7 @@
                 </div>
         </section>
         <section data-scroll-container class="section_projet">
-            <div class="header_projet_2">
+            <div class="header_projet_2 color3">
                 <div class="hd_row2 ">
                     <div class="hd_r1_col_left">
                         <div class="hd_r1_col_left-text">
@@ -87,7 +90,7 @@
                 </div>
         </section>
         <section data-scroll-container class="section_projet">
-            <div class="header_projet">
+            <div class="header_projet color4">
                 <div class="hd_row1 ">
                     <div class="hd_r1_col_left">
                         <div class="hd_r1_col_left-text">
@@ -105,22 +108,27 @@
                 </div>
             </div>
         </section>
-        <section class="gallery color3">
+        <section class="gallery color5">
             <div class="gllr_row_1">
-                <img src="assets/images/shieldbearers/sbgrille1.png">
-                <img src="assets/images/shieldbearers/sbgrille12.png">
+                <img src="assets/images/nasa/nasagrille1.png">
+                <img src="assets/images/header/tc.png">
             </div>
             <div class="gllr_row_2">
-                <img src="assets/images/shieldbearers/sbgrille2.png">
-                <img src="assets/images/shieldbearers/sbgrille22.png">
+                <img src="assets/images/sv/svgrille2.png">
+                <img src="assets/images/starrynight/sngrille22.png">
                 <img src="assets/images/shieldbearers/sbgrille23.png">
             </div>
             <div class="gllr_row_3">
-                <img src="assets/images/shieldbearers/sbgrille3.png">
-                <img src="assets/images/shieldbearers/sbgrille32.png">
+                <img src="assets/images/zencoffee/zcgrille1.png">
+                <img src="assets/images/wokeasy/wokeasygrille32.png">
             </div>
         </section>
     </div>
+
+
+
+
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/CSSRulePlugin.min.js"></script>
@@ -130,7 +138,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/ukiyojs@2.0.2/dist/ukiyo.min.js"></script>
-
 </body>
 
 <script>
@@ -174,6 +181,28 @@
     });
 
 
+
+    gsap.to('body', {
+        scrollTrigger: {
+            trigger: '.color5',
+            scroller: '.container',
+            scrub: true,
+            start: "top top",
+            end: "top 50%",
+        },
+        backgroundColor: '#ffff'
+    });
+    gsap.to('body', {
+        scrollTrigger: {
+            trigger: '.color4',
+            scroller: '.container',
+            scrub: true,
+            start: "top top",
+            end: "top 50%",
+        },
+        backgroundColor: '#F5EDFF'
+    });
+
     gsap.to('body', {
         scrollTrigger: {
             trigger: '.color3',
@@ -182,7 +211,7 @@
             start: "top top",
             end: "top 50%",
         },
-        backgroundColor: '#F3f4f5'
+        backgroundColor: '#F6FFF4'
     });
 
     gsap.to('body', {
@@ -193,8 +222,9 @@
             start: "top top",
             end: "top 50%",
         },
-        backgroundColor: '#F9FCFF'
+        backgroundColor: '#E8F2FF'
     });
+
     gsap.to('body', {
         scrollTrigger: {
             trigger: '.color1',
@@ -203,8 +233,9 @@
             start: "20% 50%",
             end: "top 50%",
         },
-        backgroundColor: '#E9ECFF',
-        color: '#2c2c2c',
+        backgroundColor: '#fff',
+        color: '#000',
+
     });
     gsap.to('body', {
         scrollTrigger: {
@@ -215,11 +246,8 @@
             end: "top 50%",
         },
         backgroundColor: '#000',
-        color: '#ffff',
+        color: '#fff',
     });
-
-
-
 
 
 
