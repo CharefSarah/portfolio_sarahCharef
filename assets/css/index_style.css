@@ -152,3 +152,27 @@ h2 {
     width: 100vw;
     height: 100%;
 }
+
+
+
+.gallery{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gllr_row_1, .gllr_row_2, .gllr_row_3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding-left:5%;
+    padding-right:5%;
+}
+.gllr_row_1 img , .gllr_row_2 img , .gllr_row_3 img{
+    height: 350px;
+    margin: 10px;
+}
