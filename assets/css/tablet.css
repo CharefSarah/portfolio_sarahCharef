@@ -97,29 +97,32 @@
         width: 90vw !important;
         height: auto;
     }
+    
+.social-media h2 {
+    color: #000;
+    
+    }
+    .liens_rs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #000;
+    
+    
+    }
+    .liens_rs a{
+        display: flex;
+        flex-direction: row !important;
+        align-items: center !important;
+        color: #000;
+    
+    }
+    
+    .lien_rs svg{
+        padding-bottom:10px;
+        margin: 10px !important;
+        fill: #000 !important;
+    }
+    
 }
 
-
-/*
-@media screen and (max-width:500px) {
-    .hd_r1_col_left {
-        font-size: 12px;
-        width: 250px;
-    }
-
-    .hd_r1_col_right>a {
-        width: 90vw !important;
-        height: auto;
-    }
-
-    .hd_r1_col_right a div {
-        width: 90vw !important;
-        height: auto;
-    }
-
-    .ukiyo {
-        width: 90vw !important;
-        height: auto;
-    }
-
-} */
