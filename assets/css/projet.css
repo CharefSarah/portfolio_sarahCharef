@@ -361,6 +361,18 @@ html.has-scroll-dragging {
     font-weight: extra-light;
 
 }
+.hd_r1_col_left-text p {
+  margin-bottom: 2%;
+}
+
+.hd_r1_col_left-text a {
+    color: #2c2c2c;
+  }
+  
+  .hd_r1_col_left-text a:hover {
+    color: #9c9c9c;
+  }
+
 
 .section_projet_2 {
     display: flex;
@@ -418,7 +430,8 @@ html.has-scroll-dragging {
     align-items: center;
 
 }
-.linkediv  h2 {
+
+.linkediv h2 {
     font-size: 2.5vw;
 }
 
@@ -431,7 +444,7 @@ html.has-scroll-dragging {
 
 }
 
-.linkediv a{
+.linkediv a {
 
     color: #000;
     font-weight: 200;
@@ -439,10 +452,39 @@ html.has-scroll-dragging {
 
 }
 
-.linkediv a:hover{
+.linkediv a:hover {
 
     color: #9c9c9c;
     font-weight: 200;
 
 
+}
+
+.color2{
+    margin-bottom: 10%;
+}
+
+
+
+
+.gallery{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gllr_row_1, .gllr_row_2, .gllr_row_3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-left:5%;
+    padding-right:5%;
+}
+.gllr_row_1 img , .gllr_row_2 img , .gllr_row_3 img{
+    height: 300px;
+    margin: 10px;
 }
