@@ -229,6 +229,25 @@ html.has-scroll-dragging {
     margin: 0;
     color: #fff;
 }
+.section_first_training_center {
+    background-image: url("../images/trainingCenter/banner.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 4vw;
+    margin: 0;
+    color: #fff;
+
+  
+}
+
+
 
 
 
