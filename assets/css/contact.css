@@ -165,12 +165,12 @@ button[type="submit"]:hover {
     padding-left: 3%;
     padding-right: 3%;
     z-index: 99999;
-    color: #ffff;
+    color: #000;
     mix-blend-mode: difference;
 }
 
 .nav .titlenav a,
 .nav a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }

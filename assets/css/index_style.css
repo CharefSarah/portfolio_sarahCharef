@@ -27,8 +27,8 @@ body {
     overflow-x: hidden;
     background-color: #fff;
     color: #2c2c2c;
-  
-    
+
+
 
 }
 
@@ -75,9 +75,14 @@ h2 {
     line-height: 1;
 }
 
-.link_home{
+.link_home {
     color: #000;
 }
+.link_home:hover {
+    color: #d3d3d3;
+}
+
+
 /* -------------------------------------------------------------------------- */
 /*                                    LOCO                                    */
 /* -------------------------------------------------------------------------- */
@@ -234,7 +239,7 @@ html.has-scroll-dragging {
     font-weight: 200;
     padding-top: 5vh;
     padding-bottom: 5vh;
-    
+
 }
 
 .hd_r1_col_left {
@@ -532,5 +537,12 @@ html.has-scroll-dragging {
     border-radius: 50px;
     width: 160px;
     font-weight: bold;
+
+}
+
+.card_btn:hover {
+
+    color: #d3d3d3;
+
 
 }
