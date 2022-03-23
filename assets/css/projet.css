@@ -25,6 +25,54 @@ body {
 h1 {
     font-size: 13vw;
     line-height: 1.2;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 220px;
+}
+
+
+
+
+
+h1 span {
+    position: absolute;
+    top: 100%;
+    animation: reveal-animation 1.3s ease-in-out forwards;
+}
+
+.subtitle {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 80px;
+}
+
+.subtitle span {
+    position: absolute;
+    top: 100%;
+    animation: reveal-animation 1.3s ease-in-out forwards;
+    animation-delay: 0.8s;
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        height: 80px;
+    }
+
+    .subtitle {
+        height: 25px;
+    }
+}
+
+@keyframes reveal-animation {
+    0% {
+        top: 100%;
+    }
+
+    100% {
+        top: 0%;
+    }
 }
 
 h2 {

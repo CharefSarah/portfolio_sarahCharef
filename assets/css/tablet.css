@@ -46,8 +46,9 @@
         width: 100%;
 
     }
+
     .hd_r1_col_left-text h4 {
-       font-size: 18px;
+        font-size: 18px;
 
     }
 
@@ -72,7 +73,10 @@
 
     .gllr_row_1>img,
     .gllr_row_2>img,
-    .gllr_row_3>img {
+    .gllr_row_3>img,
+    .gllr_row_1>a>img,
+    .gllr_row_2>a>img,
+    .gllr_row_3>a>img {
         width: 90vw;
         margin: auto;
         height: auto;
