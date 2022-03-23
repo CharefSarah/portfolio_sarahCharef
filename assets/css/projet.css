@@ -134,13 +134,12 @@ html.has-scroll-dragging {
 
 
 
-
 .section_first_wokeasy {
     background-image: url("../images/wokeasy/wokeasy-header.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -156,7 +155,7 @@ html.has-scroll-dragging {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 95vh;
+    height: 100vh;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -172,7 +171,7 @@ html.has-scroll-dragging {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -188,7 +187,7 @@ html.has-scroll-dragging {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -204,7 +203,7 @@ html.has-scroll-dragging {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -220,7 +219,7 @@ html.has-scroll-dragging {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -236,7 +235,7 @@ html.has-scroll-dragging {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     max-width: 100%;
     display: flex;
     flex-direction: column;
