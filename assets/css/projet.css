@@ -56,6 +56,11 @@ h1 span {
         height: 80px;
     }
 
+    .h1_twolines {
+        height: 130px;
+    }
+
+
     .subtitle {
         height: 25px;
     }
@@ -511,7 +516,7 @@ html.has-scroll-dragging {
     padding-right: 3%;
     z-index: 99999;
     color: #ffff;
-    
+
 }
 
 .nav .titlenav a,
