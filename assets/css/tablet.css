@@ -327,5 +327,16 @@
 
     }
 
+    h1 {
+        height: 80px;
+    }
 
+    .h1_twolines {
+        height: 130px;
+    }
+
+
+    .subtitle {
+        height: 25px;
+    }
 }

@@ -31,6 +31,10 @@ h1 {
     height: 220px;
 }
 
+.h1_twolines {
+    height: 450px;
+}
+
 h1 span {
     position: absolute;
     top: 100%;
@@ -49,21 +53,6 @@ h1 span {
     top: 100%;
     animation: reveal-animation 1.3s ease-in-out forwards;
     animation-delay: 0.8s;
-}
-
-@media screen and (max-width: 800px) {
-    h1 {
-        height: 80px;
-    }
-
-    .h1_twolines {
-        height: 130px;
-    }
-
-
-    .subtitle {
-        height: 25px;
-    }
 }
 
 @keyframes reveal-animation {
