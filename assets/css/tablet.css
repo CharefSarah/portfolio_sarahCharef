@@ -30,16 +30,20 @@
     .hd_row1 {
         flex-direction: column-reverse;
         align-items: center;
+        width:100%;
     }
 
     .hd_r1_col_left {
         display: flex;
         align-self: flex-start;
+        width: 100%;
+       
 
     }
 
     .hd_r1_col_left-text {
         align-self: flex-start;
+        width: 100%;
 
     }
     .hd_r1_col_left-text h4 {
@@ -50,13 +54,10 @@
     .hd_row2 {
         flex-direction: column-reverse;
         align-items: center;
+        width: 100%;
 
     }
 
-    .hd_r1_col_left {
-        font-size: 20px;
-        width: 350px;
-    }
 
     .h1_r1_col_right img {
         width: 90vw !important;
@@ -83,8 +84,8 @@
     }
 
     .hd_r1_col_left {
-        font-size: 18px;
-        width: 250px;
+        font-size: 20px;
+        width: 100%;
     }
 
     .hd_r1_col_right>a {
@@ -133,7 +134,21 @@
         margin: 10px !important;
         fill: #000 !important;
     }
+    .section_2 p {
 
+        font-size: 6vw;
+        padding: 5px;
+    
+    }
+    .section_2 h2 {
+
+        font-size: 6vw;
+    
+    }
+
+    .title_section_projet{
+        font-size: 6vw;
+    }
 
     /*----------------------------------------------------- */
     /*-----------------------SCROLLABLE-------------------- */
@@ -281,7 +296,7 @@
         height: 300px;
         background-color: rgb(29, 28, 28);
         width: 480px;
-        min-width: 280px;
+        min-width: 300px;
         display: flex;
         flex-direction: column;
         padding-bottom: 20px;
