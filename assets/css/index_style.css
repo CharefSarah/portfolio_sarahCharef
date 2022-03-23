@@ -27,8 +27,8 @@ body {
     overflow-x: hidden;
     background-color: #fff;
     color: #2c2c2c;
-  
-    
+
+
 
 }
 
@@ -61,23 +61,68 @@ a {
 
 }
 
-.webdesign {
+h2.webdesign {
     font-size: 13vw;
-    line-height: 1.2;
+    overflow: hidden;
+    position: relative;
+    height: 265px;
+    width: 100%;
+}
+
+h2.webdesign span {
+    position: absolute;
+    top: 100%;
+    animation: reveal-animation 1.3s ease-in-out forwards;
+}
+
+.subtitle {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 110px;
+}
+
+.subtitle span {
+    position: absolute;
+    top: 100%;
+    font-size: 7vw;
+    line-height: 1;
+
+    animation: reveal-animation 1.3s ease-in-out forwards;
+    animation-delay: 0.8s;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    h2.webdesign {
+        height: 80px;
+    }
+
+    .subtitle {
+        height: 25px;
+    }
+}
+
+@keyframes reveal-animation {
+    0% {
+        top: 100%;
+    }
+
+    100% {
+        top: 0%;
+    }
 }
 
 h2 {
     font-size: 3.5vw;
 }
 
-.subtitle {
-    font-size: 7vw;
-    line-height: 1;
-}
 
-.link_home{
+.link_home {
     color: #000;
 }
+
 /* -------------------------------------------------------------------------- */
 /*                                    LOCO                                    */
 /* -------------------------------------------------------------------------- */
@@ -234,7 +279,7 @@ html.has-scroll-dragging {
     font-weight: 200;
     padding-top: 5vh;
     padding-bottom: 5vh;
-    
+
 }
 
 .hd_r1_col_left {
